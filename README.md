@@ -1,0 +1,109 @@
+# Learning-Based Anomaly Detection in Multivariate Time-Series Data
+
+**Agentic Analytics Copilot with Hybrid Statistical and LSTM Models**
+
+**Author:** Rayan Belaam  
+**Courses:**  
+- ECE 5831 – Neural Networks & Pattern Recognition  
+- CIS 579 – Artificial Intelligence  
+**Semester:** Fall 2025  
+
+---
+
+## Project Overview
+
+This project presents an **Agentic Analytics Copilot** designed to autonomously monitor multivariate time-series data, detect anomalies, and recommend actions. The system combines classical statistical modeling with neural network–based forecasting to improve anomaly detection robustness and adaptability.
+
+A hybrid approach is used:
+- **STL decomposition** captures trend and seasonality structure.
+- **LSTM neural networks** learn temporal dependencies and multivariate behavior.
+- **Hybrid anomaly scoring** combines both perspectives.
+- An **agentic decision layer** suggests next actions and incorporates user feedback.
+
+The project emphasizes **pattern recognition**, **generalization**, and **learning-based anomaly detection** rather than threshold-based monitoring.
+
+---
+
+## System Components
+
+- **Statistical Model:** STL decomposition with robust z-score detection  
+- **Neural Model:** LSTM forecasting with pretraining and fine-tuning  
+- **Learning Strategy:** Transfer learning across multiple synthetic sites  
+- **Agentic Logic:** Rule-based playbook with memory (accept/reject feedback)  
+- **Implementation:** Python, TensorFlow/Keras, Statsmodels  
+
+---
+
+## Dataset
+
+Due to privacy constraints of real analytics data, a **synthetic multi-site dataset** was generated.
+
+- 50 independent sites  
+- 180 days per site  
+- Multivariate KPIs:
+  - Sessions
+  - Conversion Rate
+  - Revenue
+- Injected anomalies with seasonality and noise
+
+📂 **Dataset:**  
+👉 [Download dataset](LINK_TO_DATASET)
+
+📄 **Data generation script:**  
+`data_generation.py`
+
+---
+
+## Training Pipeline
+
+1. **Pretraining:**  
+   LSTM trained on all sites to learn general KPI dynamics.
+
+2. **Fine-Tuning:**  
+   Pretrained weights adapted to a single target site (site 0).
+
+3. **Inference:**  
+   Prediction error converted to anomaly scores and fused with STL output.
+
+---
+
+## Results Summary
+
+- Stable convergence during LSTM pretraining
+- Controlled adaptation during fine-tuning
+- No observed overfitting (training vs validation loss)
+- Improved anomaly sensitivity using hybrid scoring
+
+---
+
+## Project Artifacts
+
+### 🎥 Pre-Recorded Presentation
+👉 [Presentation Video](LINK_TO_PRESENTATION_VIDEO)
+
+### 📊 Presentation Slides
+👉 [Slides (PowerPoint/PDF)](LINK_TO_SLIDES)
+
+### 📄 Final Report
+👉 [Final Project Report](LINK_TO_REPORT)
+
+### 📈 Dataset
+👉 [Synthetic Dataset](LINK_TO_DATASET)
+
+### ▶️ Demo Video
+👉 [System Demo Video](LINK_TO_DEMO_VIDEO)
+
+---
+
+## How to Run
+
+```bash
+# Pretrain LSTM
+python train_lstm_base.py
+
+# Fine-tune on target site
+python train_lstm_finetune.py
+
+# Run the agentic analytics copilot
+python main.py
+

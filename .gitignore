@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.venv/
+env/
+tf311/
+
+# Data & outputs
+data/*.csv
+state/*.h5
+state/*.weights.h5
+state/*.npz
+charts/*.png
+
+# OS
+.DS_Store
+
