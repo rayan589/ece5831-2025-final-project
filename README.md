@@ -82,7 +82,7 @@ Due to privacy constraints of real analytics data, a **synthetic multi-site data
 👉 [Presentation Video](https://youtu.be/taQCiOL8EcU)
 
 ### 📊 Presentation Slides
-👉 [Slides (PowerPoint/PDF)](https://drive.google.com/drive/folders/1uKtc_BmY0dS8mPqWWQQIBfNmSTEkvTT7)
+👉 [Slides (PowerPoint)](https://drive.google.com/drive/folders/1uKtc_BmY0dS8mPqWWQQIBfNmSTEkvTT7)
 
 ### 📄 Final Report
 👉 [Final Project Report](https://drive.google.com/drive/folders/1J3izmTs19dJCu87y5FQv4dNyGqD1JWf1)
